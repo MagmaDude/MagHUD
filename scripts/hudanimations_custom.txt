@@ -1,0 +1,126 @@
+//====================================
+
+event HudMedicCharged
+{
+	Animate	ChargeLabel 	FgColor		"MWhite"		Linear 0.0 0.0
+	
+	Animate	ChargeMeter 	FgColor		"M1"		Linear 0.0 0.1
+	Animate	ChargeMeter 	FgColor		"M2"		Linear 0.1 0.1
+	Animate	ChargeMeter 	FgColor		"M3"		Linear 0.2 0.1
+	Animate	ChargeMeter 	FgColor		"M4"		Linear 0.3 0.1
+	Animate	ChargeMeter 	FgColor		"M5"		Linear 0.4 0.1
+	Animate	ChargeMeter 	FgColor		"M6"		Linear 0.5 0.1
+	Animate	ChargeMeter 	FgColor		"M7"		Linear 0.6 0.1
+
+
+	RunEvent HudMedicChargedLoop	0.6
+}
+
+// call to loop HudHealthBonusPulse
+event HudMedicChargedLoop
+{
+	RunEvent HudMedicCharged 0.0
+}
+
+event HudMedicChargedStop
+{
+	StopEvent HudMedicCharged 0.0
+	StopEvent HudMedicChargedLoop 0.0
+	
+	Animate	ChargeLabel 	FgColor		"MWhite"		Linear 0.0 0.0001
+	Animate	ChargeMeter 	FgColor		"MWhite"		Linear 0.0 0.0001
+}
+
+//====================================
+
+
+//Health Bonus Pulse
+event HudHealthBonusPulse
+{
+	Animate M_HealthValue 		 				FgColor 		"MOverheal" 		Linear 0.0 0.0
+	Animate M_KillerHealthValue 		 		FgColor 		"MOverheal" 		Linear 0.0 0.0
+	Animate OverhealHealth 		 				Alpha 			"255" 		Accel 0.0 0.0
+	Animate SpecHPBuff 		 					Alpha 			"255" 		Accel 0.0 0.0
+	
+	RunEvent HudHealthBonusPulseLoop	0.4
+}
+
+event HudHealthBonusPulseStop
+{
+	StopEvent HudHealthBonusPulse 0.0
+	StopEvent HudHealthBonusPulseLoop 0.0
+	
+	Animate M_HealthValue 		 				FgColor 		"MWhite" 		Linear 0.0 0.0
+	Animate M_KillerHealthValue 		 		FgColor 		"MWhite" 		Linear 0.0 0.0
+	Animate OverhealHealth 		 				Alpha 			"0" 			Accel 0.0 0.0
+	Animate SpecHPBuff 		 					Alpha 			"0" 			Accel 0.0 0.0
+}
+
+//===========================================
+
+//Health Dying Pulse
+event HudHealthDyingPulse
+{
+	Animate	PlayerStatusHealthBonusImage 		Alpha			"255"		Linear 0.0 0.075
+	Animate	PlayerStatusHealthBonusImage 		Alpha			"0"			Linear 0.125 0.075
+	
+	RunEvent HudHealthDyingPulseLoop	0.25
+}
+
+event HudHealthDyingPulseLoop
+{
+	
+	Animate M_HealthValue 		 				FgColor 		"MLowHP" 		Linear 0.0 0.0
+	Animate M_PlayerIDHealthValue 		 				FgColor 		"MLowHP" 		Linear 0.0 0.0
+	Animate PlayerStatusHealthValueSpec 		FgColor 		"MLowHP" 		Linear 0.0 0.0
+	Animate M_KillerHealthValue 		 		FgColor 		"MLowHP" 		Linear 0.0 0.0
+	
+	RunEvent HudHealthDyingPulse 0.0
+}
+
+event HudHealthDyingPulseStop
+{
+	
+	Animate M_HealthValue 		 				FgColor 		"MWhite" 			Accel 0.0 0.0
+	Animate M_PlayerIDHealthValue 		 				FgColor 		"MWhite" 			Accel 0.0 0.0
+	Animate PlayerStatusHealthValueSpec 		FgColor 		"MWhite" 			Accel 0.0 0.0
+	Animate M_KillerHealthValue 		 		FgColor 		"MWhite" 			Accel 0.0 0.0
+	
+	StopEvent HudHealthDyingPulse 0.0
+	StopEvent HudHealthDyingPulseLoop 0.0
+}
+
+//===========================================
+
+// Spy Disguise
+event HudSpyDisguiseChanged
+{
+Animate PlayerStatusSpyOutlineImage 	Alpha "255" Linear 0.0 0.2
+
+Animate PlayerStatusSpyOutlineImage Position "c-410 250" Linear 0.0 0.2
+Animate PlayerStatusSpyOutlineImage Size "140 140" Linear 0.0 0.2
+
+RunEvent HudSpyDisguiseHide 0.7
+}
+
+event HudSpyDisguiseHide
+{
+Animate PlayerStatusSpyOutlineImage Position "3 413" Linear 0.0 0.2
+Animate PlayerStatusSpyOutlineImage Size "55 55" Linear 0.0 0.2
+
+Animate PlayerStatusSpyOutlineImage Alpha "0" Linear 0.2 0.1
+}
+
+event HudSpyDisguiseFadeIn
+{
+RunEvent HudSpyDisguiseChanged 0
+Animate PlayerStatusSpyImage Alpha "255" Linear 0.9 0.1
+}
+
+event HudSpyDisguiseFadeOut
+{
+RunEvent HudSpyDisguiseChanged 0
+Animate PlayerStatusSpyImage Alpha "0" Linear 0.9 0.1
+}
+
+// ===========================================
