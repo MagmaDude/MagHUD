@@ -1,3 +1,5 @@
+#base "../overrides/Transparent-Viewmodels/TransparentViewmodels.res"
+
 "Resource/HudLayout.res"
 {
 	HudPlayerStatus
@@ -208,8 +210,8 @@
 		"fieldName" "DisguiseStatus"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"10"
-		"ypos"		"r100"
+		"xpos"		"100"
+		"ypos"		"r32"
 		"wide"		"500"
 		"tall"		"200"
 	}

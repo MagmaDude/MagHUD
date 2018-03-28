@@ -23,10 +23,7 @@
 			"ControlName"		"EditablePanel"
 			"fieldName"		"NemesisSubPanel"
 			"xpos"			"c46"
-			"xpos_hidef"	"c109"
 			"ypos"			"223"
-			"ypos_hidef"		"223"
-			"ypos_lodef"		"193"
 			"zpos"			"4"
 			"wide"			"166"
 			"tall"			"38"
@@ -184,10 +181,10 @@
 		"model_wide"		"90"
 		"model_tall"		"60"
 		
-		"text_xpos"			"10"
-		"text_ypos"			"10"
-		"text_wide"			"170"
-		"text_center"		"1"
+		"text_xpos"		"10"
+		"text_ypos"		"10"
+		"text_wide"		"170"
+		"text_center"	"1"
 		
 		"max_text_height"	"100"
 		"padding_height"	"10"
@@ -214,7 +211,6 @@
 		{
 			"fieldName"		"itemmodelpanel"
 			"use_item_rendertarget" "0"
-			"inventory_image_type" "1"
 			"useparentbg"		"1"
 		}
 		

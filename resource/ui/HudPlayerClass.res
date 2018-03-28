@@ -1,3 +1,5 @@
+#base "../../overrides/Transparent-3D-Class/Transparent3DClass.res"
+
 "Resource/UI/HudPlayerClass.res"
 {
 	"HudPlayerClass"
@@ -6,7 +8,7 @@
 		"fieldName"		"HudPlayerClass"
 		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"20"
+		"zpos"			"-5"
 		"wide"			"f0"
 		"tall"			"480"
 		"visible"		"1"
@@ -103,19 +105,19 @@
 		
 		"xpos"			"0"
 		"ypos"			"r200"
-		"zpos"			"2"		
-		"wide"			"240"
+		"zpos"			"-100"		
+		"wide"			"100"
 		"tall"			"200"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"paintbackground"	"1"
-		"bgcolor_override"	"200 0 0 0"
 		
 		"render_texture"	"0"
-		"fov"			"52"
+		"fov"			"12"
 		"allow_rot"		"1"
+
+		"disable_speak_event"	"1"
 				
 		"model"
 		{
@@ -130,198 +132,176 @@
 			"frame_origin_x"	"0"
 			"frame_origin_y"	"0"
 			"frame_origin_z"	"0"
-			"spotlight" "1"
-			"fov"		"100"
+			"spotlight" "0"
 		
 			"modelname"		""
 			
+			"animation"
+			{
+				"name"		"PRIMARY"
+				"activity"	"ACT_MP_STAND_PRIMARY"
+				"default"	"1"
+			}
+			
+			"animation"
+			{
+				"name"		"SECONDARY"
+				"activity"	"ACT_MP_STAND_SECONDARY"
+			}
+			
+			"animation"
+			{
+				"name"		"MELEE"
+				"activity"	"ACT_MP_STAND_MELEE"
+			}
+			
+			"animation"
+			{
+				"name"		"BUILDING"
+				"activity"	"ACT_MP_STAND_BUILDING"
+			}
+			
+			"animation"
+			{
+				"name"		"PDA"
+				"activity"	"ACT_MP_STAND_PDA"
+			}
+			
+			"animation"
+			{
+				"name"		"ITEM1"
+				"activity"	"ACT_MP_STAND_ITEM1"
+			}
+			
+			"animation"
+			{
+				"name"		"ITEM2"
+				"activity"	"ACT_MP_STAND_ITEM2"
+			}
+			
+			"animation"
+			{
+				"name"		"MELEE_ALLCLASS"
+				"activity"	"ACT_MP_STAND_MELEE_ALLCLASS"
+			}
+			
+			"animation"
+			{
+				"name"		"PRIMARY2"
+				"activity"	"ACT_MP_STAND_PRIMARY"
+			}
+			
+			"animation"
+			{
+				"name"		"SECONDARY2"
+				"activity"	"ACT_MP_STAND_SECONDARY2"
+			}
 		}
 
 		"customclassdata"
 		{
 			"undefined"
 			{
-				"fov"			"100"
-				"angles_x"		"-17"
-				"angles_y"		"200"
-				"angles_z"		"-10"
-				"origin_x"		"105"
-				"origin_y"		"5"
-				"origin_z"		"-78"
 			}
+			
 			"Scout"
 			{
-				"fov"		"11"
-				"angles_x"	"-5"
-				"angles_y"	"200"
-				"angles_z"	"0"
-				"origin_x"	"825"
-				"origin_y"	"60"
-				"origin_z"	"-98"
+				"fov"			"23"
+				"angles_x"		"-17"
+				"angles_y"		"230"
+				"angles_z"		"-10"
+				"origin_x"		"105"
+				"origin_y"		"-1"
+				"origin_z"		"-82"
 			}
+			
 			"Sniper"
 			{
-				"fov"		"12"
-				"angles_x"	"0"
-				"angles_y"	"200"
-				"angles_z"	"0"
-				"origin_x"	"805"
-				"origin_y"	"58"
-				"origin_z"	"-108"
+				"fov"			"24"
+				"angles_x"		"-10"
+				"angles_y"		"230"
+				"angles_z"		"-10"
+				"origin_x"		"130"
+				"origin_y"		"-3"
+				"origin_z"		"-97"
 			}
+			
 			"Soldier"
 			{
-				"fov"		"13"
-				"angles_x"	"0"
-				"angles_y"	"190"
-				"angles_z"	"0"
-				"origin_x"	"805"
-				"origin_y"	"63"
-				"origin_z"	"-108"
+				"fov"			"21"
+				"angles_x"		"-10"
+				"angles_y"		"210"
+				"angles_z"		"0"
+				"origin_x"		"145"
+				"origin_y"		"-5"
+				"origin_z"		"-90"
 			}
+			
 			"Demoman"
 			{
-				"fov"		"13"
-				"angles_x"	"-3"
-				"angles_y"	"200"
-				"angles_z"	"0"
-				"origin_x"	"805"
-				"origin_y"	"63"
-				"origin_z"	"-108"
+				"fov"			"24"
+				"angles_x"		"-13"
+				"angles_y"		"230"
+				"angles_z"		"0"
+				"origin_x"		"138"
+				"origin_y"		"-4"
+				"origin_z"		"-93"
 			}
+			
 			"Medic"
 			{
-				"fov"		"13"
-				"angles_x"	"0"
-				"angles_y"	"200"
-				"angles_z"	"0"
-				"origin_x"	"805"
-				"origin_y"	"63"
-				"origin_z"	"-108"
+				"fov"			"20"
+				"angles_x"		"-5"
+				"angles_y"		"230"
+				"angles_z"		"0"
+				"origin_x"		"150"
+				"origin_y"		"-5"
+				"origin_z"		"-96"
 			}
+			
 			"Heavy"
 			{
-				"fov"		"13"
-				"angles_x"	"0"
-				"angles_y"	"200"
-				"angles_z"	"0"
-				"origin_x"	"805"
-				"origin_y"	"63"
-				"origin_z"	"-108"
+				"fov"			"20"
+				"angles_x"		"-5"
+				"angles_y"		"235"
+				"angles_z"		"0"
+				"origin_x"		"200"
+				"origin_y"		"0"
+				"origin_z"		"-102"
 			}
+			
 			"Pyro"
 			{
-				"fov"		"13"
-				"angles_x"	"0"
-				"angles_y"	"210"
-				"angles_z"	"0"
-				"origin_x"	"805"
-				"origin_y"	"67"
-				"origin_z"	"-108"
+				"fov"			"21"
+				"angles_x"		"-5"
+				"angles_y"		"230"
+				"angles_z"		"0"
+				"origin_x"		"175"
+				"origin_y"		"5"
+				"origin_z"		"-90"
 			}
+			
 			"Spy"
 			{
-				"fov"		"12"
-				"angles_x"	"-3"
-				"angles_y"	"200"
-				"angles_z"	"0"
-				"origin_x"	"805"
-				"origin_y"	"60"
-				"origin_z"	"-108"
+				"fov"			"21"
+				"angles_x"		"-5"
+				"angles_y"		"220"
+				"angles_z"		"0"
+				"origin_x"		"160"
+				"origin_y"		"0"
+				"origin_z"		"-95"
 			}
+			
 			"Engineer"
 			{
-				"fov"		"12"
-				"angles_x"	"0"
-				"angles_y"	"200"
-				"angles_z"	"0"
-				"origin_x"	"805"
-				"origin_y"	"60"
-				"origin_z"	"-100"
+				"fov"			"20"
+				"angles_x"		"-10"
+				"angles_y"		"228"
+				"angles_z"		"0"
+				"origin_x"		"140"
+				"origin_y"		"-2"
+				"origin_z"		"-82"
 			}
-		}
-	}
-	
-	"CarryingWeapon"
-	{
-		"ControlName"			"EditablePanel"
-		"fieldName"				"CarryingWeapon"
-		"xpos"					"0"
-		"ypos"					"r20"
-		"zpos"					"100"
-		"wide"					"500"
-		"tall"	 				"28"
-
-		"CarryingBackground"
-		{
-			"ControlName"			"CTFImagePanel"
-			"fieldName"				"CarryingBackground"
-			"xpos"					"0"
-			"ypos"					"0"
-			"zpos"					"0"
-			"wide"					"f0"
-			"tall"	 				"f0"
-			"autoResize"			"0"
-			"pinCorner"				"0"
-			"visible"				"1"
-			"enabled"				"1"
-			"image"					"../hud/color_panel_brown"
-			"scaleImage"			"1"
-			"teambg_1"				"../hud/color_panel_brown"
-			"teambg_2"				"../hud/color_panel_red"
-			"teambg_2_lodef"		"../hud/color_panel_red"
-			"teambg_3"				"../hud/color_panel_blu"
-			"teambg_3_lodef"		"../hud/color_panel_blu"
-			"proportionaltoparent"	"1"
-			"paintborder"			"1"
-			"src_corner_height"		"23"
-			"src_corner_width"		"23"
-			"draw_corner_width"		"0"
-			"draw_corner_height" 	"0"	
-		}
-
-		"CarryingLabel"
-		{	
-			"ControlName"		"CExLabel"
-			"fieldName"			"CarryingLabel"
-			"font"				"NameID"
-			"xpos"				"10"
-			"ypos"				"2"
-			"zpos"				"0"
-			"wide"				"0"
-			"tall"	 			"0"
-			"autoResize"		"0"
-			"pinCorner"			"0"
-			"visible"			"1"
-			"enabled"			"1"
-			"textAlignment"		"North-West"
-			"dulltext"			"0"
-			"brighttext"		"0"
-			"proportionaltoparent"	"1"
-			"auto_wide_tocontents"	"1"
-			"fgcolor"			"MWhite"
-			"labelText"			"%carrying%"
-		}
-
-		"OwnerLabel"
-		{	
-			"ControlName"		"Label"
-			"fieldName"			"OwnerLabel"
-			"font"				"DefaultVerySmall"
-			"xpos"				"5"
-			"ypos"				"10"
-			"zpos"				"0"
-			"wide"				"200"
-			"tall"	 			"f0"
-			"autoResize"		"0"
-			"pinCorner"			"0"
-			"visible"			"1"
-			"enabled"			"1"
-			"textAlignment"		"West"
-			"dulltext"			"0"
-			"brighttext"		"0"
-			"proportionaltoparent"	"1"
-			"auto_wide_tocontents"	"1"
 		}
 	}
 }

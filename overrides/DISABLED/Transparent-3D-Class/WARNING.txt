@@ -1,0 +1,9 @@
+The Transparent 3D Model is a bit buggy.
+
+	Bugs:
+	- Pyro gets a box around the model until you switch weapons
+	- If you don't use Transparent Viewmodels and a weapon gets in the area near the 3D model part of it will turn transparent.
+	- Demoman's Skullcutter isn't fully transparent. (Won't fix for the following reason)
+	- When using this, Sniper's scope near the 3D Model is transparent. (It is possible to make the entire scope transparent but that is an exploit and will most definitly get you banned if caught in comp leagues)
+	
+So don't complain that this is broken even though I know people will. (I'm looking for the scope fix)
