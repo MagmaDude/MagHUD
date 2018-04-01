@@ -1,0 +1,321 @@
+"Resource/UI/MapInfoMenu.res"
+{
+	"mapinfo"
+	{
+		"ControlName"	"Frame"
+		"fieldName"		"mapinfo"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+	}
+	
+	"MapInfoTitle"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"MapInfoTitle"
+		"xpos"			"10"
+		"ypos"			"10"
+		"zpos"			"1"
+		"wide"			"f0"
+		"tall"			"36"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%mapname%"
+		"textAlignment"	"west"
+		"font"			"HUDScore"
+		"fgcolor"		"MWhite"
+	}
+	
+	"MapInfoType"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"MapInfoType"
+		"xpos"			"10"
+		"ypos"			"45"
+		"zpos"			"1"
+		"wide"			"225"
+		"tall"			"24"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%gamemode%"
+		"textAlignment"	"west"
+		"font"			"SecondaryAmmo"
+		"fgcolor"		"MHurt"
+	}	
+	
+	"MapInfoText"
+	{
+		"ControlName"	"CExRichText"
+		"fieldName"		"MapInfoText"
+		"font"			"Killcount"
+		"xpos"			"6"
+		"ypos"			"85"
+		"zpos"			"3"
+		"wide"			"250"
+		"tall"			"300"
+		"autoResize"	"3"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"paintborder"	"0"
+		"textAlignment"	"west"
+		"fgcolor"		"Gray"
+	}
+	
+	"MapImage"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"MapImage"
+		"xpos"			"c10"
+		"ypos"			"75"
+		"zpos"			"2"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"image"			""
+		"scaleImage"	"1"		
+	}
+
+	"MapInfoContinue" [$WIN32]
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoContinue"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"6"
+		"wide"			"0"
+		"tall"			"0"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"0"
+		"enabled"		"0"
+		"labelText"		"#TF_Continue"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"command"		"continue"
+		"default"		"1"
+		"font"			"Killfeed"
+		"fgcolor"		"Blank"
+	}
+	
+	"MapInfoContinueFix" [$WIN32]
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoContinueFix"
+		"xpos"			"c-466"
+		"ypos"			"r150"
+		"zpos"			"6"
+		"wide"			"150"
+		"tall"			"13"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"Continue (E)" // Putting & causes text to mess up </3
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"command"		"continue"
+		"default"		"1"
+		"font"			"Killfeed"
+		"defaultBgColor_override"	"Blank"
+		"armedBgColor_override"		"Blank"
+		"depressedBgColor_override"	"Blank"
+		"defaultFgColor_override"	"Gray"
+		"armedFgColor_override" 	"MWhite"
+		"depressedFgColor_override" "MWhite"
+	}
+	
+	"HiddenContinueButton"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"HiddenContinueButton"
+		"xpos"		"9999"
+		"ypos"		"9999"
+		"zpos"		"1"
+		"wide"		"20"
+		"tall"		"20"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"&E"
+		"textAlignment"	"center"
+		"Command"		"continue"
+	}
+	
+	"MapInfoWatchIntro" [$WIN32]
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoWatchIntro"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"6"
+		"wide"			"0"
+		"tall"			"0"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"0"
+		"enabled"		"0"
+		"labelText"		""
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"command"		""
+		"default"		"1"
+		"font"			"MenuSmallFont"
+		"fgcolor"		"Blank"
+	}
+	
+	"MapInfoBack" [$WIN32]
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoBack"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"6"
+		"wide"			"0"
+		"tall"			"0"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"0"
+		"enabled"		"0"
+		"labelText"		""
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"command"		"back"
+		"font"			"Killfeed"
+		"fgcolor"		"Blank"
+	}
+	
+	"MapInfoBackFix" [$WIN32]
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoBackFix"
+		"xpos"			"c-474"
+		"ypos"			"r164"
+		"zpos"			"6"
+		"wide"			"150"
+		"tall"			"13"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"Back (Q)" // Putting & causes text to mess up </3
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"command"		"back"
+		"font"			"Killfeed"
+		"defaultBgColor_override"	"Blank"
+		"armedBgColor_override"		"Blank"
+		"depressedBgColor_override"	"Blank"
+		"defaultFgColor_override"	"Gray"
+		"armedFgColor_override" 	"MWhite"
+		"depressedFgColor_override" "MWhite"
+	}
+	
+	"HiddenBackButton"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"HiddenContinueButton"
+		"xpos"		"9999"
+		"ypos"		"9999"
+		"zpos"		"1"
+		"wide"		"20"
+		"tall"		"20"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"&Q"
+		"textAlignment"	"center"
+		"Command"		"back"
+	}
+	
+	"MenuBG"
+	{
+		"ControlName"	"CModelPanel"
+		"fieldName"		"MenuBG"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"		
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"fov"			"20"
+		
+		"model"
+		{
+			"modelname"	"models/vgui/UI_welcome01_screen.mdl"
+			"skin"		"0"
+			"angles_x" "0"
+			"angles_y" "180"
+			"angles_z" "0"
+			"origin_x" "290"
+			"origin_x_lodef" "320"
+			"origin_x_hidef" "310"
+			"origin_y" "0"
+			"origin_z" "-39"
+		}
+	}					
+
+	"ShadedBar"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"ShadedBar"
+		"xpos"			"0"
+		"ypos"			"r50"
+		"zpos"			"5"
+		"wide"			"f0"
+		"tall"			"50"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"tabPosition"	"0"	
+		"image"			"loadout_bottom_gradient"
+		"tileImage"		"1"
+		"PaintBackgroundType"	"0"
+	}	
+
+	"Footer" [$X360]
+	{
+		"ControlName"		"CTFFooter"
+		"fieldName"			"Footer"
+		"zpos"				"6"
+		"tall"				"80"
+		"button_separator"	"10"
+		"buttongap"			"50"
+		"textadjust"		"3"
+		"buttonoffsety"		"20"
+		"fonttext"			"MatchmakingDialogMenuLarge"
+		"fgcolor"			"HudOffWhite" 	
+		
+		"button"
+		{
+			"name"		"intro"
+			"text"		"#TF_WatchIntro_360"
+			"icon"		"#GameUI_Icons_Y_BUTTON"	
+		}
+		
+		"button"
+		{
+			"name"		"continue"
+			"text"		"#TF_Continue_360"
+			"icon"		"#GameUI_Icons_A_BUTTON"	
+		}
+	}	
+}

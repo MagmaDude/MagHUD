@@ -263,7 +263,7 @@
 			{
 				"fov"			"20"
 				"angles_x"		"-5"
-				"angles_y"		"235"
+				"angles_y"		"230"
 				"angles_z"		"0"
 				"origin_x"		"200"
 				"origin_y"		"0"

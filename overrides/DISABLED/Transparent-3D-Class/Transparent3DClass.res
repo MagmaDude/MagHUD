@@ -12,8 +12,8 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"scaleImage"	"1"
-		"image"				"replay/thumbnails/REFRACTnormal_transparent"
-		"teambg_2"			"replay/thumbnails/REFRACTnormal_transparent"
-		"teambg_3"			"replay/thumbnails/REFRACTnormal_transparent"
+		"image"				"replay/thumbnails/refract/REFRACTnormal_transparent"
+		"teambg_2"			"replay/thumbnails/refract/REFRACTnormal_transparent"
+		"teambg_3"			"replay/thumbnails/refract/REFRACTnormal_transparent"
 	}
 }

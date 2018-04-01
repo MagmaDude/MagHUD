@@ -1,4 +1,5 @@
-#base "../overrides/Transparent-Viewmodels/TransparentViewmodels.res"
+#base "../overrides/DMG-Line-Indicator/DMG-Line.res"							// DMG Line
+#base "../overrides/Transparent-Viewmodels/TransparentViewmodels.res"			// Transparent Viewmodels
 
 "Resource/HudLayout.res"
 {
@@ -15,7 +16,6 @@
 
 	HudWeaponAmmo
 	{
-		"fieldName" "HudWeaponAmmo"
 		"fieldName" "HudWeaponAmmo"
 		"visible" "1"
 		"enabled" "1"
