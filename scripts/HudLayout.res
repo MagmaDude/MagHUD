@@ -804,16 +804,14 @@
 	}
 
 	WinPanel
-	{
-		"fieldName"				"WinPanel"
-		"visible"				"1"
-		"enabled"				"1"
-		"xpos"					"c-150"
-		"ypos"					"215"
-		"wide"					"300"
-		"tall"					"300"
-		"zpos"					"4"
-		"proportionaltoparent"	"1"
+    {
+        "fieldName"             "WinPanel"
+        "visible"               "1"
+        "enabled"               "1"
+        "xpos"                  "c-100"
+        "ypos"                  "260"
+        "wide"                  "200"
+        "tall"                  "300"
 	}
 
 	ArenaWinPanel
@@ -965,7 +963,7 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"c-235"
-		"ypos"			"c-52"
+		"ypos"			"c65"
 		"wide"			"470"
 		"tall"			"200"
 		"PaintBackgroundType"	"0"
